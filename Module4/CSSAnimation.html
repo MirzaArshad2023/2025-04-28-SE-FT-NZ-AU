@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        p {
+            animation-name: slidedown;
+            animation-duration: 10s;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes slide-in {
+            0% {
+                margin-left: 0%;
+                background-color: red;
+            }
+
+            50% {
+                font-size: x-large;
+                background-color: orange;
+            }
+
+            100% {
+                margin-left: 100%;
+                background-color: blue;
+            }
+        }
+
+        @keyframes slidedown {
+            from {
+                margin-top: 0%;
+            }
+
+            to {
+                margin-top: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello world</p>
+</body>
+
+</html>

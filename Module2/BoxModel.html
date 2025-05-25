@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    .box {
+        padding: 20px;
+        border: 2px solid black;
+        margin: 40px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .border-box {
+        box-sizing: border-box;
+    }
+
+    .content-box {
+        box-sizing: content-box;
+    }
+
+    .overflowtext {
+        width: 50px;
+        height: 100px;
+        border: 2px solid red;
+        overflow-y: auto;
+    }
+</style>
+
+<body>
+    <section class="border-box box">
+        <p>
+            Some text within the content box
+        </p>
+        <p>
+            This text will demonstrate the different aspects such as padding, margin, border etc
+        </p>
+    </section>
+    <section class="content-box box">
+        <p>
+            Some text within the content box
+        </p>
+        <p>
+            This text will demonstrate the different aspects such as padding, margin, border etc
+        </p>
+    </section>
+    <section class="overflowtext">
+        content in the last box to demonstrate the different aspects of the box. content in the last box to demonstrate
+        the different aspects of the box . content in the last box to demonstrate the different aspects of the box<br>
+        content in the last box to demonstrate the different aspects of the box. content in the last box to demonstrate
+        the different aspects of the box . content in the last box to demonstrate the different aspects of the box<br>
+    </section>
+</body>
+
+</html>

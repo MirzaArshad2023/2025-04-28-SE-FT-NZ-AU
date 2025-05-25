@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --background-color: green;
+        --fontcolor: black;
+    }
+
+    .container {
+        width: 50%;
+        border: 2px solid red;
+        display: grid;
+        grid-template-rows: min-content 1fr min-content;
+        grid-template-columns: repeat(4, [col] 1fr);
+        ;
+    }
+
+    .child {
+        width: 150px;
+        height: 150px;
+        background-color: var(--background-color);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        color: var(--fontcolor);
+        border: 1px solid black;
+    }
+
+
+
+    @media screen and (min-width: 650px) {
+        .container {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="child">
+            First
+        </div>
+        <div class="child" id="second">
+            Second
+        </div>
+        <div class="child item-c">
+            Third
+        </div>
+        <div class="child">
+            First
+        </div>
+        <div class="child">
+            First
+        </div>
+        <div class="child">
+            First
+        </div>
+        <div class="child">
+            First
+        </div>
+
+    </div>
+</body>
+
+</html>

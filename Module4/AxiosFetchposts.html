@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios library demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</head>
+
+<body>
+    <h1> Check console of the browser</h1>
+</body>
+
+<script>
+    axios.get("https://jsonplaceholder.typicode.com/posts")
+        .then(response => console.log(response.data))
+
+    axios.post("https://jsonplaceholder.typicode.com/posts", {
+        userid: 2,
+        title: "new post from axios",
+        body: "new body from axios"
+    })
+        .then(response => console.log(response.data))
+
+
+</script>
+
+</html>

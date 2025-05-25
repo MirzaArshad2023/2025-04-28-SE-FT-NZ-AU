@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sample</title>
+</head>
+<style>
+    * {
+        color: brown
+    }
+
+
+
+
+
+    .class1 {
+        font-weight: bold;
+        background-color: gray;
+        text-transform: capitalize;
+
+    }
+
+    .child1 {
+        color: gray;
+        background-color: yellow;
+    }
+
+    #div1 {
+
+        background-color: yellow;
+    }
+
+    #p3 {
+
+        background-color: aliceblue;
+    }
+
+    input[type="text"] {
+        color: gold;
+    }
+
+    input[type="password"] {
+        background-color: aquamarine;
+    }
+
+    a[title="Institute of Data"] {
+        background-color: rgb(117, 186, 156);
+    }
+
+    a[title="Google search"] {
+        background-color: rgba(190, 126, 204, 0.764);
+    }
+
+    a:hover {
+        background-color: green;
+        font-size: x-large;
+    }
+
+    a::before {
+
+        content: "🔗";
+    }
+
+
+    div.class1#p2 {
+        background-color: orange;
+        color: red;
+    }
+
+    h1,
+    h2 {
+        color: orange
+    }
+
+    h3,
+    h4,
+    h5 {
+        color: black;
+    }
+
+    .class1 div {
+        background-color: orange;
+    }
+
+    .class1>.child1 {
+        background-color: green;
+    }
+
+    p::first-line {
+        color: blue;
+    }
+
+    p::first-letter {
+        font-size: xx-large;
+        color: red;
+    }
+
+    p::after {
+        content: "Action this";
+    }
+</style>
+
+<body>
+    <div>
+        Sample Div
+    </div>
+    <div class="class1">
+        ANother Div
+        <p id="p1">Paragraph within second div<br>Secondline of the paragraph <br> third line of paragraph</p>
+        <p id="p2">Second paragraph Paragraph within second div</p>
+        <div>
+            Sample div inside a class1 selector
+        </div>
+        <p class="child1">
+            Sample paragraph defined here
+        </p>
+    </div>
+    <div id="div1">
+        Thid div
+    </div>
+    <p id="p3">
+        A sample paragraph
+    </p>
+    <div class="class1">
+        Fourth Div in this html page
+        <div>
+            Another div inside a class1 element
+        </div>
+    </div>
+    <label>Enter Region:
+        <input type="text" name="region">
+    </label>
+    <label>Enter Country:
+        <input type="text" name="country">
+    </label>
+    <label>Enter password:
+        <input type="password" name="country">
+    </label>
+    <div>
+        <a title="Institute of Data" href="https://www.institutedata.com">IOD</a>
+    </div>
+    <div>
+        <a title="Google search" href="https://www.google.com">Google</a>
+    </div>
+
+    <h1>First Heading</h1>
+    <h2>First Heading</h2>
+    <h3>First Heading</h3>
+    <h4>First Heading</h4>
+
+    <h5>First Heading</h5>
+
+    <a href="https://www.yahoo.com">Another search</a>
+    <div><button>Click</button></div>
+</body>
+
+</html>

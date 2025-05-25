@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherit and Initial Example</title>
+    <style>
+        #div1 {
+            background-color: gray;
+            font-style: italic;
+            color: brown
+        }
+
+        p {
+            color: inherit;
+        }
+
+        em {
+            color: initial;
+        }
+
+        .div1 {
+            background-color: bisque;
+        }
+
+        section {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            font-size: 50pt;
+        }
+
+        main {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <p>A paragraph demonstrates the initial <br> and Inherit properties in CSS</p>
+    </div>
+    <div id="div2">
+        <p>The quick brow fox <em>jumps</em> over the lazy dog</p>
+    </div>
+
+    <div class="div1">
+        <form>
+            <input type="text" name="firstName">
+            <input type="date" name="DOB">
+        </form>
+        <div>
+            <p>A paragraph within the div1</p>
+        </div>
+
+    </div>
+    <section>
+        <main>
+            Some main text here...
+        </main>
+        <footer>
+            Some footer here
+        </footer>
+    </section>
+
+</body>
+
+
+</html>

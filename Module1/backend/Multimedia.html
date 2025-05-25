@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration of Audio and video</title>
+</head>
+
+<body>
+    <div>
+        <video id="myvideo" width="300">
+            <source src="./videos/misspolly.mp4" type="video/mp4"> Sorry, your browser doesn't support
+            <source src="./videos/flower.webm" type="video/webm"> Sorry, your browser doesn't support this video
+        </video>
+        <button onclick="playivideo()">Play</button>
+        <button onclick="pausevideo()">Pause</button>
+    </div>
+    <div>
+        <audio src="./videos/dumbwaystodie.mp3"></audio>
+    </div>
+    <div>
+        <figure>
+            <img src="https://www.woolworths.co.nz/images/global-nav/header/woolworths-desktop-logo.svg"
+                alt="Woolworth website">
+            <figcaption>It's retail supermarket</figcaption>
+        </figure>
+    </div>
+    <script>
+        function playivideo() {
+            document.getElementById("myvideo").play()
+        }
+        function pausevideo() {
+            document.getElementById("myvideo").pause()
+        }
+    </script>
+</body>
+
+</html>
